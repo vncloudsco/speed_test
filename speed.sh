@@ -1,9 +1,4 @@
 #!/bin/bash
-#######################################################
-# Tocdo.net Linux Server Benchmarks v1.5
-# Run speed test: 
-# curl -Lso- tocdo.net | bash
-#######################################################
 
 # Colors
 RED='\033[0;31m'
@@ -187,4 +182,4 @@ test() {
 clear
 tmp=$(mktemp)
 test | tee $tmp
-(echo "curl -Lso- tocdo.net | bash" && cat $tmp) >> ~/tocdo.log
+(echo "curl -Lso- tocdo.net | bash" && cat $tmp) >> ~/speed.log
